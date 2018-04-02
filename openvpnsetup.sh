@@ -48,9 +48,6 @@ if cat /etc/*release | grep ^NAME | grep CentOS; then
 elif cat /etc/*release | grep ^NAME | grep Ubuntu; then
     apt-get install -y $deb_packages
     ufw disable
-else
-    echo "Unsupported distro, sorry"
-    exit 1;
 fi
 
 #server settings
